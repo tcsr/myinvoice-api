@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "code": "01",
+        "description": "Cash"
+    },
+    {
+        "id": 2,
+        "code": "02",
+        "description": "Cheque"
+    },
+    {
+        "id": 3,
+        "code": "03",
+        "description": "Bank Transfer"
+    },
+    {
+        "id": 4,
+        "code": "04",
+        "description": "Credit Card"
+    },
+    {
+        "id": 5,
+        "code": "05",
+        "description": "Debit Card"
+    },
+    {
+        "id": 6,
+        "code": "06",
+        "description": "e-Wallet / Digital Wallet"
+    },
+    {
+        "id": 7,
+        "code": "07",
+        "description": "Digital Bank"
+    },
+    {
+        "id": 8,
+        "code": "08",
+        "description": "Others"
+    }
+]

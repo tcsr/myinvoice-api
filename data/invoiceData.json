@@ -1,0 +1,57 @@
+[
+  {
+    "id": "2f25409c-8fa1-470f-811e-cdb082ab9013",
+    "counterParty": "GLOBEX CORPORATION - URP5",
+    "docType": "Invoice",
+    "docNumber": 245663,
+    "docDate": "28 Jan 2024",
+    "generatedNumber": "153-456-7891",
+    "invoiceType": "B2B",
+    "invoiceValue": "245678",
+    "irbmResponse": "Pending"
+  },
+  {
+    "id": "4f25509c-8fa1-470f-811e-cdb082ab9014",
+    "counterParty": "INITECH CORPORATION - URP7",
+    "docType": "Invoice",
+    "docNumber": 245664,
+    "docDate": "29 Jan 2024",
+    "generatedNumber": "153-456-7892",
+    "invoiceType": "B2B",
+    "invoiceValue": "345789",
+    "irbmResponse": "Rejected"
+  },
+  {
+    "id": "5f25609c-8fa1-470f-811e-cdb082ab9015",
+    "counterParty": "ACME CORPORATION - URP9",
+    "docType": "Invoice",
+    "docNumber": 245665,
+    "docDate": "30 Jan 2024",
+    "generatedNumber": "153-456-7893",
+    "invoiceType": "B2B",
+    "invoiceValue": "456890",
+    "irbmResponse": "Success"
+  },
+  {
+    "id": "6f25709c-8fa1-470f-811e-cdb082ab9016",
+    "counterParty": "SOYLENT CORP - URP11",
+    "docType": "Invoice",
+    "docNumber": 245666,
+    "docDate": "31 Jan 2024",
+    "generatedNumber": "153-456-7894",
+    "invoiceType": "B2B",
+    "invoiceValue": "567901",
+    "irbmResponse": "Pending"
+  },
+  {
+    "id": "be731030-df83-419c-b3d6-9ef04e7f4a9f",
+    "counterParty": "IRIS LOGIX SOLUTIONS PRIVATE LIMITED - 27999343434",
+    "docType": "Invoice",
+    "docNumber": 18,
+    "docDate": "12 Jan 2024",
+    "generatedNumber": "123-456-7890",
+    "invoiceType": "B2B",
+    "invoiceValue": "12345",
+    "irbmResponse": "Success"
+  }
+]

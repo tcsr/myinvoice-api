@@ -1,0 +1,49 @@
+[
+    {
+        "id": 1,
+        "title": "IRBM Overall Summary",
+        "code": "Summary",
+        "today": 8,
+        "thismonth": 45
+    },
+    {
+        "id": 2,
+        "title": "IRBM Success",
+        "code": "Success",
+        "today": 6,
+        "thismonth": 30
+    },
+    {
+        "id": 3,
+        "title": "IRBM Rejected",
+        "code": "Rejected",
+        "today": 0,
+        "thismonth": 2
+    },
+    {
+        "id": 4,
+        "title": "IRBM Errors",
+        "code": "Error",
+        "today": 2,
+        "thismonth": 13
+    },
+    {
+        "id": 5,
+        "title": "Source System",
+        "code": "Source",
+        "today": 17,
+        "thismonth": 80,
+        "todayDetails": {
+            "inQueue": 20,
+            "sourceSystem": 15,
+            "manuallyAdded": 5,
+            "failedToInterface": 2
+        },
+        "thisMonthDetails": {
+            "inQueue": 100,
+            "sourceSystem": 75,
+            "manuallyAdded": 25,
+            "failedToInterface": 10
+        }
+    }
+]

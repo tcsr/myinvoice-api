@@ -1,0 +1,162 @@
+[
+    {
+        "id": 1,
+        "code": "01",
+        "description": "Invoice"
+    },
+    {
+        "id": 2,
+        "code": "02",
+        "description": "Credit Note"
+    },
+    {
+        "id": 3,
+        "code": "03",
+        "description": "Debit Note"
+    },
+    {
+        "id": 4,
+        "code": "04",
+        "description": "Refund Note"
+    },
+    {
+        "id": 5,
+        "code": "11",
+        "description": "Self-billed Invoice"
+    },
+    {
+        "id": 6,
+        "code": "12",
+        "description": "Self-billed Credit Note"
+    },
+    {
+        "id": 7,
+        "code": "13",
+        "description": "Self-billed Debit Note"
+    },
+    {
+        "id": 8,
+        "code": "14",
+        "description": "Self-billed Refund Note"
+    },
+    {
+        "id": 9,
+        "code": "01",
+        "description": "Cash"
+    },
+    {
+        "id": 10,
+        "code": "02",
+        "description": "Cheque"
+    },
+    {
+        "id": 11,
+        "code": "03",
+        "description": "Bank Transfer"
+    },
+    {
+        "id": 12,
+        "code": "04",
+        "description": "Credit Card"
+    },
+    {
+        "id": 13,
+        "code": "05",
+        "description": "Debit Card"
+    },
+    {
+        "id": 14,
+        "code": "06",
+        "description": "e-Wallet / Digital Wallet"
+    },
+    {
+        "id": 15,
+        "code": "07",
+        "description": "Digital Bank"
+    },
+    {
+        "id": 16,
+        "code": "08",
+        "description": "Others"
+    },
+    {
+        "id": 17,
+        "code": "01",
+        "description": "Cash"
+    },
+    {
+        "id": 18,
+        "code": "02",
+        "description": "Cheque"
+    },
+    {
+        "id": 19,
+        "code": "03",
+        "description": "Bank Transfer"
+    },
+    {
+        "id": 20,
+        "code": "04",
+        "description": "Credit Card"
+    },
+    {
+        "id": 21,
+        "code": "05",
+        "description": "Debit Card"
+    },
+    {
+        "id": 22,
+        "code": "06",
+        "description": "e-Wallet / Digital Wallet"
+    },
+    {
+        "id": 23,
+        "code": "07",
+        "description": "Digital Bank"
+    },
+    {
+        "id": 24,
+        "code": "08",
+        "description": "Others"
+    },
+    {
+        "id": 25,
+        "code": "01",
+        "description": "Invoice"
+    },
+    {
+        "id": 26,
+        "code": "02",
+        "description": "Credit Note"
+    },
+    {
+        "id": 27,
+        "code": "03",
+        "description": "Debit Note"
+    },
+    {
+        "id": 28,
+        "code": "04",
+        "description": "Refund Note"
+    },
+    {
+        "id": 29,
+        "code": "11",
+        "description": "Self-billed Invoice"
+    },
+    {
+        "id": 30,
+        "code": "12",
+        "description": "Self-billed Credit Note"
+    },
+    {
+        "id": 31,
+        "code": "13",
+        "description": "Self-billed Debit Note"
+    },
+    {
+        "id": 32,
+        "code": "14",
+        "description": "Self-billed Refund Note"
+    }
+]

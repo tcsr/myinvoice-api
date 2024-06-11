@@ -42,16 +42,5 @@
     "invoiceType": "B2B",
     "invoiceValue": "567901",
     "irbmResponse": "Pending"
-  },
-  {
-    "id": "be731030-df83-419c-b3d6-9ef04e7f4a9f",
-    "counterParty": "IRIS LOGIX SOLUTIONS PRIVATE LIMITED - 27999343434",
-    "docType": "Invoice",
-    "docNumber": 18,
-    "docDate": "12 Jan 2024",
-    "generatedNumber": "123-456-7890",
-    "invoiceType": "B2B",
-    "invoiceValue": "12345",
-    "irbmResponse": "Success"
   }
 ]

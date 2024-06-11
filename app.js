@@ -128,20 +128,28 @@ app.post('/einvoice/generateInvoices', (req, res) => {
 
     fs.readFile(invoiceData, 'utf8', (err, data) => {
         if (err) {
-            console.error(err);
-            return res.status(500).json({ message: 'Error reading invoice data' });
+            console.error('Error reading invoice data:', err.message);
+            return res.status(500).json({ status: 'failed', message: 'Error reading invoice data' });
         }
 
-        const existingInvoices = JSON.parse(data);
+        let existingInvoices;
+        try {
+            existingInvoices = JSON.parse(data);
+        } catch (parseErr) {
+            console.error('Error parsing invoice data:', parseErr.message);
+            return res.status(500).json({ status: 'failed', message: 'Error parsing invoice data' });
+        }
+
         const newInvoices = existingInvoices.concat(invoices);
 
         fs.writeFile(invoiceData, JSON.stringify(newInvoices, null, 2), 'utf8', (err) => {
             if (err) {
-                console.error(err);
-                return res.status(500).json({ message: 'Error writing invoice data' });
+                console.error('Error writing invoice data:', err.message);
+                return res.status(500).json({ status: 'failed', message: 'Error writing invoice data' });
             }
 
-            res.status(200).json({ message: 'Invoices generated successfully' });
+            // res.status(400).json({ status: 'error', message: 'Invoices generated successfully' });
+            res.status(200).json({ status: 'success', message: 'Invoices generated successfully' });
         });
     });
 });
@@ -151,20 +159,28 @@ app.delete('/einvoice/deleteInvoices', (req, res) => {
 
     fs.readFile(invoiceData, 'utf8', (err, data) => {
         if (err) {
-            console.error(err);
-            return res.status(500).json({ message: 'Error reading invoice data' });
+            console.error('Error reading invoice data:', err.message);
+            return res.status(500).json({ status: 'failed', message: 'Error reading invoice data' });
         }
 
-        let existingInvoices = JSON.parse(data);
-        existingInvoices = existingInvoices.filter(invoice => !ids.includes(invoice.id));
+        let existingInvoices;
+        try {
+            existingInvoices = JSON.parse(data);
+        } catch (parseErr) {
+            console.error('Error parsing invoice data:', parseErr.message);
+            return res.status(500).json({ status: 'failed', message: 'Error parsing invoice data' });
+        }
 
-        fs.writeFile(invoiceData, JSON.stringify(existingInvoices, null, 2), 'utf8', (err) => {
+        const filteredInvoices = existingInvoices.filter(invoice => !ids.includes(invoice.id));
+
+        fs.writeFile(invoiceData, JSON.stringify(filteredInvoices, null, 2), 'utf8', (err) => {
             if (err) {
-                console.error(err);
-                return res.status(500).json({ message: 'Error writing invoice data' });
+                console.error('Error writing invoice data:', err.message);
+                return res.status(500).json({ status: 'failed', message: 'Error writing invoice data' });
             }
 
-            res.status(200).json({ message: 'Invoices deleted successfully' });
+            // res.status(400).json({ status: 'error', message: 'Invoices deleted successfully' });
+            res.status(200).json({ status: 'success', message: 'Invoices deleted successfully' });
         });
     });
 });

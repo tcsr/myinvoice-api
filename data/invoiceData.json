@@ -42,5 +42,115 @@
     "invoiceType": "B2B",
     "invoiceValue": "567901",
     "irbmResponse": "Pending"
+  },
+  {
+    "id": "3f25309c-8fa1-470f-811e-cdb082ab9017",
+    "counterParty": "AJANTA PHARMA USA INC - URP",
+    "docType": "Invoice",
+    "docNumber": 22,
+    "docDate": "1 Jan 2024",
+    "generatedNumber": "123-456-7890",
+    "invoiceType": "B2B",
+    "invoiceValue": "12345",
+    "irbmResponse": "Success"
+  },
+  {
+    "id": "be731030-df83-419c-b3d6-9ef04e7f4a9f",
+    "counterParty": "IRIS LOGIX SOLUTIONS PRIVATE LIMITED - 27999343434",
+    "docType": "Invoice",
+    "docNumber": 18,
+    "docDate": "12 Jan 2024",
+    "generatedNumber": "123-456-7890",
+    "invoiceType": "B2B",
+    "invoiceValue": "12345",
+    "irbmResponse": "Success"
+  },
+  {
+    "id": "be731030-df83-419c-b3d6-9ef04e7f4c9f",
+    "counterParty": "IRIS LOGIX SOLUTIONS PRIVATE LIMITED - 279993434334",
+    "docType": "Invoice",
+    "docNumber": 18,
+    "docDate": "12 Jan 2024",
+    "generatedNumber": "123-456-7890",
+    "invoiceType": "B2B",
+    "invoiceValue": "12345",
+    "irbmResponse": "Success"
+  },
+  {
+    "id": "be731030-df83-419c-b3d6-9ef04v7f4a9f",
+    "counterParty": "IRIS LOGIX SOLUTIONS PRIVATE LIMITED - 279993434356",
+    "docType": "Invoice",
+    "docNumber": 18,
+    "docDate": "12 Jan 2024",
+    "generatedNumber": "123-456-7890",
+    "invoiceType": "B2B",
+    "invoiceValue": "12345",
+    "irbmResponse": "Error"
+  },
+  {
+    "id": "be731030-df83-419c-b3d6-9ef24e7f4a9f",
+    "counterParty": "IRIS LOGIX SOLUTIONS PRIVATE LIMITED - 299934363489",
+    "docType": "Invoice",
+    "docNumber": 18,
+    "docDate": "12 Jan 2024",
+    "generatedNumber": "123-456-7890",
+    "invoiceType": "B2B",
+    "invoiceValue": "12345",
+    "irbmResponse": "Error"
+  },
+  {
+    "id": "3f25309c-8fa1-470f-811e-cdb082ab9018",
+    "counterParty": "AJANTA PHARMA USA INC - URP",
+    "docType": "Invoice",
+    "docNumber": 22,
+    "docDate": "23 Jan 2024",
+    "generatedNumber": "153-456-7890",
+    "invoiceType": "B2B",
+    "invoiceValue": "124567",
+    "irbmResponse": "Rejected"
+  },
+  {
+    "id": "3f25309c-8fa1-470f-811e-cdb082ab918",
+    "counterParty": "AJANTA PHARMA USA INC - URP2",
+    "docType": "Invoice",
+    "docNumber": 27892,
+    "docDate": "25 Jan 2024",
+    "generatedNumber": "153-456-7890",
+    "invoiceType": "B2B",
+    "invoiceValue": "124567",
+    "irbmResponse": "Rejected"
+  },
+  {
+    "id": "3f25309c-8fa1-470f-811e-cdb082ab9012",
+    "counterParty": "AJANTA PHARMA USA INC - URP3",
+    "docType": "Invoice",
+    "docNumber": 245662,
+    "docDate": "27 Jan 2024",
+    "generatedNumber": "153-456-7890",
+    "invoiceType": "B2B",
+    "invoiceValue": "124567",
+    "irbmResponse": "Success"
+  },
+  {
+    "id": "3f25309c-8fa1-470f-811e-cdb082ab9018",
+    "counterParty": "AJANTA PHARMA USA INC - URP4",
+    "docType": "Invoice",
+    "docNumber": 24552,
+    "docDate": "30 Jan 2024",
+    "generatedNumber": "153-456-7890",
+    "invoiceType": "B2B",
+    "invoiceValue": "124567",
+    "irbmResponse": "In Progress"
+  },
+  {
+    "id": "3f25309c-8fa1-470f-811e-cdb082ab9018",
+    "counterParty": "AJANTA PHARMA USA INC - URP5",
+    "docType": "Invoice",
+    "docNumber": 2222,
+    "docDate": "30 Jan 2024",
+    "generatedNumber": "153-456-7890",
+    "invoiceType": "B2B",
+    "invoiceValue": "124567",
+    "irbmResponse": "InQueue"
   }
 ]

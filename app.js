@@ -9,7 +9,15 @@ const cardsDetails = './data/cardsDetails.json';
 const paymentModes = './data/paymentModes.json';
 const invoiceTypes = './data/invoiceType.json';
 const invoiceListPaginated = './data/invoiceListPaginated.json';
-const invoiceData = './data/invoiceData.json'; // Added for generating/deleting invoices
+const invoiceData = './data/invoiceData.json';
+const classificationCodes = './data/classificationCodes.json';
+const msicCodes = './data/MSICSubCategoryCodes.json';
+const countryCodes = './data/countryCodes.json';
+const currencyCodes = './data/currencyCodes.json';
+const paymentMethods = './data/paymentMethods.json';
+const stateCodes = './data/stateCodes.json';
+const taxTypes = './data/taxTypes.json';
+const unitTypes = './data/unitTypes.json';
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -25,6 +33,88 @@ app.get('/einvoice/getSupplierDetails', (req, res) => {
     });
 });
 
+app.get('/master/classificationCodes', (req, res) => {
+    fs.readFile(classificationCodes, 'utf8', (err, data) => {
+        if (err) {
+            console.log(err);
+            return res.status(500).json({ message: 'Error reading Classification Codes' });
+        }
+        res.status(200).send(data);
+    });
+});
+
+app.get('/master/countryCode', (req, res) => {
+    fs.readFile(countryCodes, 'utf8', (err, data) => {
+        if (err) {
+            console.log(err);
+            return res.status(500).json({ message: 'Error reading Country Codes' });
+        }
+        res.status(200).send(data);
+    });
+});
+
+app.get('/master/currencyCode', (req, res) => {
+    fs.readFile(currencyCodes, 'utf8', (err, data) => {
+        if (err) {
+            console.log(err);
+            return res.status(500).json({ message: 'Error reading Currency Codes' });
+        }
+        res.status(200).send(data);
+    });
+});
+
+app.get('/master/stateCode', (req, res) => {
+    fs.readFile(stateCodes, 'utf8', (err, data) => {
+        if (err) {
+            console.log(err);
+            return res.status(500).json({ message: 'Error reading State Codes' });
+        }
+        res.status(200).send(data);
+    });
+});
+
+app.get('/master/msicCode', (req, res) => {
+    fs.readFile(msicCodes, 'utf8', (err, data) => {
+        if (err) {
+            console.log(err);
+            return res.status(500).json({ message: 'Error reading Msic Codes' });
+        }
+        res.status(200).send(data);
+    });
+});
+
+
+app.get('/master/paymentMethods', (req, res) => {
+    fs.readFile(paymentMethods, 'utf8', (err, data) => {
+        if (err) {
+            console.log(err);
+            return res.status(500).json({ message: 'Error reading Payent Methods' });
+        }
+        res.status(200).send(data);
+    });
+});
+
+app.get('/master/taxTypes', (req, res) => {
+    fs.readFile(taxTypes, 'utf8', (err, data) => {
+        if (err) {
+            console.log(err);
+            return res.status(500).json({ message: 'Error reading Tax Types' });
+        }
+        res.status(200).send(data);
+    });
+});
+
+app.get('/master/unitTypes', (req, res) => {
+    fs.readFile(unitTypes, 'utf8', (err, data) => {
+        if (err) {
+            console.log(err);
+            return res.status(500).json({ message: 'Error reading Unit Types' });
+        }
+        res.status(200).send(data);
+    });
+});
+
+
 app.get('/einvoice/getCardsDetails', (req, res) => {
     fs.readFile(cardsDetails, 'utf8', (err, data) => {
         if (err) {
@@ -35,7 +125,7 @@ app.get('/einvoice/getCardsDetails', (req, res) => {
     });
 });
 
-app.get('/dropdown/paymentMode', (req, res) => {
+app.get('/master/paymentMode', (req, res) => {
     fs.readFile(paymentModes, 'utf8', (err, data) => {
         if (err) {
             console.log(err);
@@ -45,7 +135,7 @@ app.get('/dropdown/paymentMode', (req, res) => {
     });
 });
 
-app.get('/dropdown/invoiceType', (req, res) => {
+app.get('/master/invoiceType', (req, res) => {
     fs.readFile(invoiceTypes, 'utf8', (err, data) => {
         if (err) {
             console.log(err);
@@ -56,7 +146,7 @@ app.get('/dropdown/invoiceType', (req, res) => {
 });
 
 app.get('/einvoice/invoiceListPaginated', (req, res) => {
-    const { page = 0, size = 10, search = '', filter = '' } = req.query;
+    const { pageNumber = 0, pageSize = 10, searchTerm = '', filter = '' } = req.query;
 
     fs.readFile(invoiceListPaginated, 'utf8', (err, data) => {
         if (err) {
@@ -68,10 +158,10 @@ app.get('/einvoice/invoiceListPaginated', (req, res) => {
         let content = jsonData.content;
 
         // Apply search filter
-        if (search) {
+        if (searchTerm) {
             content = content.filter(invoice =>
                 Object.values(invoice).some(value =>
-                    value.toString().toLowerCase().includes(search.toLowerCase())
+                    value.toString().toLowerCase().includes(searchTerm.toLowerCase())
                 )
             );
         }
@@ -86,15 +176,15 @@ app.get('/einvoice/invoiceListPaginated', (req, res) => {
         const totalElements = content.length;
 
         // Apply pagination
-        const startIndex = page * size;
-        const endIndex = startIndex + parseInt(size);
+        const startIndex = pageNumber * pageSize;
+        const endIndex = startIndex + parseInt(pageSize);
         const paginatedContent = content.slice(startIndex, endIndex);
 
         const response = {
             content: paginatedContent,
             pageable: {
-                pageNumber: parseInt(page),
-                pageSize: parseInt(size),
+                pageNumber: parseInt(pageNumber),
+                pageSize: parseInt(pageSize),
                 sort: {
                     empty: false,
                     sorted: true,
@@ -106,15 +196,15 @@ app.get('/einvoice/invoiceListPaginated', (req, res) => {
             },
             last: endIndex >= totalElements,
             totalElements: totalElements,
-            totalPages: Math.ceil(totalElements / size),
-            size: parseInt(size),
-            number: parseInt(page),
+            totalPages: Math.ceil(totalElements / pageSize),
+            size: parseInt(pageSize),
+            number: parseInt(pageNumber),
             sort: {
                 empty: false,
                 sorted: true,
                 unsorted: false
             },
-            first: parseInt(page) === 0,
+            first: parseInt(pageNumber) === 0,
             numberOfElements: paginatedContent.length,
             empty: paginatedContent.length === 0
         };
@@ -184,6 +274,11 @@ app.delete('/einvoice/deleteInvoices', (req, res) => {
         });
     });
 });
+
+// read all the missed json from data folder in the root and generate respective get apis
+
+
+
 
 app.listen(3000, () => {
     console.log('server started');

@@ -1,34 +1,42 @@
 [
     {
-        "Code": "01",
-        "Payment Method": "Cash"
+        "id": 1,
+        "code": "01",
+        "paymentMethod": "Cash"
     },
     {
-        "Code": "02",
-        "Payment Method": "Cheque"
+        "id": 2,
+        "code": "02",
+        "paymentMethod": "Cheque"
     },
     {
-        "Code": "03",
-        "Payment Method": "Bank Transfer"
+        "id": 3,
+        "code": "03",
+        "paymentMethod": "Bank Transfer"
     },
     {
-        "Code": "04",
-        "Payment Method": "Credit Card"
+        "id": 4,
+        "code": "04",
+        "paymentMethod": "Credit Card"
     },
     {
-        "Code": "05",
-        "Payment Method": "Debit Card"
+        "id": 5,
+        "code": "05",
+        "paymentMethod": "Debit Card"
     },
     {
-        "Code": "06",
-        "Payment Method": "e-Wallet / Digital Wallet"
+        "id": 6,
+        "code": "06",
+        "paymentMethod": "e-Wallet / Digital Wallet"
     },
     {
-        "Code": "07",
-        "Payment Method": "Digital Bank"
+        "id": 7,
+        "code": "07",
+        "paymentMethod": "Digital Bank"
     },
     {
-        "Code": "08",
-        "Payment Method": "Others"
+        "id": 8,
+        "code": "08",
+        "paymentMethod": "Others"
     }
 ]

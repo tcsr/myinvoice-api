@@ -1,182 +1,227 @@
 [
     {
-        "Code": "001",
-        "Description": "Breastfeeding equipment "
+        "id": 1,
+        "code": "001",
+        "description": "Breastfeeding equipment"
     },
     {
-        "Code": "002",
-        "Description": "Child care centres and kindergartens fees"
+        "id": 2,
+        "code": "002",
+        "description": "Child care centres and kindergartens fees"
     },
     {
-        "Code": "003",
-        "Description": "Computer, smartphone or tablet"
+        "id": 3,
+        "code": "003",
+        "description": "Computer, smartphone or tablet"
     },
     {
-        "Code": "004",
-        "Description": "Consolidated e-Invoice "
+        "id": 4,
+        "code": "004",
+        "description": "Consolidated e-Invoice"
     },
     {
-        "Code": "005",
-        "Description": "Construction materials (as specified under Fourth Schedule of the Lembaga Pembangunan Industri Pembinaan Malaysia Act 1994)"
+        "id": 5,
+        "code": "005",
+        "description": "Construction materials (as specified under Fourth Schedule of the Lembaga Pembangunan Industri Pembinaan Malaysia Act 1994)"
     },
     {
-        "Code": "006",
-        "Description": "Disbursement "
+        "id": 6,
+        "code": "006",
+        "description": "Disbursement"
     },
     {
-        "Code": "007",
-        "Description": "Donation"
+        "id": 7,
+        "code": "007",
+        "description": "Donation"
     },
     {
-        "Code": "008",
-        "Description": "e-Commerce - e-Invoice to buyer / purchaser"
+        "id": 8,
+        "code": "008",
+        "description": "e-Commerce - e-Invoice to buyer / purchaser"
     },
     {
-        "Code": "009",
-        "Description": "e-Commerce - Self-billed e-Invoice to seller, logistics, etc. "
+        "id": 9,
+        "code": "009",
+        "description": "e-Commerce - Self-billed e-Invoice to seller, logistics, etc."
     },
     {
-        "Code": "010",
-        "Description": "Education fees"
+        "id": 10,
+        "code": "010",
+        "description": "Education fees"
     },
     {
-        "Code": "011",
-        "Description": "Goods on consignment (Consignor)"
+        "id": 11,
+        "code": "011",
+        "description": "Goods on consignment (Consignor)"
     },
     {
-        "Code": "012",
-        "Description": "Goods on consignment (Consignee)"
+        "id": 12,
+        "code": "012",
+        "description": "Goods on consignment (Consignee)"
     },
     {
-        "Code": "013",
-        "Description": "Gym membership"
+        "id": 13,
+        "code": "013",
+        "description": "Gym membership"
     },
     {
-        "Code": "014",
-        "Description": "Insurance - Education and medical benefits"
+        "id": 14,
+        "code": "014",
+        "description": "Insurance - Education and medical benefits"
     },
     {
-        "Code": "015",
-        "Description": "Insurance - Takaful or life insurance"
+        "id": 15,
+        "code": "015",
+        "description": "Insurance - Takaful or life insurance"
     },
     {
-        "Code": "016",
-        "Description": "Interest and financing expenses"
+        "id": 16,
+        "code": "016",
+        "description": "Interest and financing expenses"
     },
     {
-        "Code": "017",
-        "Description": "Internet subscription "
+        "id": 17,
+        "code": "017",
+        "description": "Internet subscription"
     },
     {
-        "Code": "018",
-        "Description": "Land and building"
+        "id": 18,
+        "code": "018",
+        "description": "Land and building"
     },
     {
-        "Code": "019",
-        "Description": "Medical examination for learning disabilities and early intervention or rehabilitation treatments of learning disabilities"
+        "id": 19,
+        "code": "019",
+        "description": "Medical examination for learning disabilities and early intervention or rehabilitation treatments of learning disabilities"
     },
     {
-        "Code": "020",
-        "Description": "Medical examination or vaccination expenses"
+        "id": 20,
+        "code": "020",
+        "description": "Medical examination or vaccination expenses"
     },
     {
-        "Code": "021",
-        "Description": "Medical expenses for serious diseases"
+        "id": 21,
+        "code": "021",
+        "description": "Medical expenses for serious diseases"
     },
     {
-        "Code": "022",
-        "Description": "Others"
+        "id": 22,
+        "code": "022",
+        "description": "Others"
     },
     {
-        "Code": "023",
-        "Description": "Petroleum operations (as defined in Petroleum (Income Tax) Act 1967)"
+        "id": 23,
+        "code": "023",
+        "description": "Petroleum operations (as defined in Petroleum (Income Tax) Act 1967)"
     },
     {
-        "Code": "024",
-        "Description": "Private retirement scheme or deferred annuity scheme "
+        "id": 24,
+        "code": "024",
+        "description": "Private retirement scheme or deferred annuity scheme"
     },
     {
-        "Code": "025",
-        "Description": "Motor vehicle"
+        "id": 25,
+        "code": "025",
+        "description": "Motor vehicle"
     },
     {
-        "Code": "026",
-        "Description": "Subscription of books / journals / magazines / newspapers / other similar publications"
+        "id": 26,
+        "code": "026",
+        "description": "Subscription of books / journals / magazines / newspapers / other similar publications"
     },
     {
-        "Code": "027",
-        "Description": "Reimbursement "
+        "id": 27,
+        "code": "027",
+        "description": "Reimbursement"
     },
     {
-        "Code": "028",
-        "Description": "Rental of motor vehicle"
+        "id": 28,
+        "code": "028",
+        "description": "Rental of motor vehicle"
     },
     {
-        "Code": "029",
-        "Description": "EV charging facilities (Installation, rental, sale / purchase or subscription fees) "
+        "id": 29,
+        "code": "029",
+        "description": "EV charging facilities (Installation, rental, sale / purchase or subscription fees)"
     },
     {
-        "Code": "030",
-        "Description": "Repair and maintenance"
+        "id": 30,
+        "code": "030",
+        "description": "Repair and maintenance"
     },
     {
-        "Code": "031",
-        "Description": "Research and development "
+        "id": 31,
+        "code": "031",
+        "description": "Research and development"
     },
     {
-        "Code": "032",
-        "Description": "Foreign income "
+        "id": 32,
+        "code": "032",
+        "description": "Foreign income"
     },
     {
-        "Code": "033",
-        "Description": "Self-billed - Betting and gaming "
+        "id": 33,
+        "code": "033",
+        "description": "Self-billed - Betting and gaming"
     },
     {
-        "Code": "034",
-        "Description": "Self-billed - Importation of goods "
+        "id": 34,
+        "code": "034",
+        "description": "Self-billed - Importation of goods"
     },
     {
-        "Code": "035",
-        "Description": "Self-billed - Importation of services"
+        "id": 35,
+        "code": "035",
+        "description": "Self-billed - Importation of services"
     },
     {
-        "Code": "036",
-        "Description": "Self-billed - Others"
+        "id": 36,
+        "code": "036",
+        "description": "Self-billed - Others"
     },
     {
-        "Code": "037",
-        "Description": "Self-billed - Monetary payment to agents, dealers or distributors "
+        "id": 37,
+        "code": "037",
+        "description": "Self-billed - Monetary payment to agents, dealers or distributors"
     },
     {
-        "Code": "038",
-        "Description": "Sports equipment, rental / entry fees for sports facilities, registration in sports competition or sports training fees imposed by associations / sports clubs / companies registered with the Sports Commissioner or Companies Commission of Malaysia and carrying out sports activities as listed under the Sports Development Act 1997"
+        "id": 38,
+        "code": "038",
+        "description": "Sports equipment, rental / entry fees for sports facilities, registration in sports competition or sports training fees imposed by associations / sports clubs / companies registered with the Sports Commissioner or Companies Commission of Malaysia and carrying out sports activities as listed under the Sports Development Act 1997"
     },
     {
-        "Code": "039",
-        "Description": "Supporting equipment for disabled person"
+        "id": 39,
+        "code": "039",
+        "description": "Supporting equipment for disabled person"
     },
     {
-        "Code": "040",
-        "Description": "Voluntary contribution to approved provident fund "
+        "id": 40,
+        "code": "040",
+        "description": "Voluntary contribution to approved provident fund"
     },
     {
-        "Code": "041",
-        "Description": "Dental examination or treatment"
+        "id": 41,
+        "code": "041",
+        "description": "Dental examination or treatment"
     },
     {
-        "Code": "042",
-        "Description": "Fertility treatment"
+        "id": 42,
+        "code": "042",
+        "description": "Fertility treatment"
     },
     {
-        "Code": "043",
-        "Description": "Treatment and home care nursing, daycare centres and residential care centers"
+        "id": 43,
+        "code": "043",
+        "description": "Treatment and home care nursing, daycare centres and residential care centers"
     },
     {
-        "Code": "044",
-        "Description": "Vouchers, gift cards, loyalty points, etc"
+        "id": 44,
+        "code": "044",
+        "description": "Vouchers, gift cards, loyalty points, etc"
     },
     {
-        "Code": "045",
-        "Description": "Self-billed - Non-monetary payment to agents, dealers or distributors"
+        "id": 45,
+        "code": "045",
+        "description": "Self-billed - Non-monetary payment to agents, dealers or distributors"
     }
 ]
